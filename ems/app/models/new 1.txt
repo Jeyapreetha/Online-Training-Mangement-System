@@ -1,0 +1,73 @@
+<div class="form-group">
+				  <div class="row" style="margin-top:0;padding-top:0;">
+							<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-sm-offset-3"><b class="blue">Name *</b> </div>
+					<label for="name" class="col-sm-3 control-label">Name</label>
+					<div class="col-sm-9">
+					  <input name="name" type="text" class="form-control" id="name" placeholder="name">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label for="mobile" class="col-sm-3 control-label">Mobile no</label>
+					<div class="col-sm-9">
+					  <input name="mobile" type="text" class="form-control" id="mobile" placeholder="Mobile no">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label for="email" class="col-sm-3 control-label">email</label>
+					<div class="col-sm-9">
+					  <input name="email" type="text" class="form-control" id="email" placeholder="email">
+					</div>
+				  </div>
+				  <div class="form-group">
+				  
+					<label for="courses" class="col-sm-3 control-label">courses</label>
+					<div class="col-sm-9">
+					<select  name="courses" class="form-control" id="courses" placeholder="courses">
+					<option value ="0">--- Select Courses---</option>
+					<?php 
+						foreach($courses as $course):
+					?>
+						<option value="<?=$course->id?>"><?=$course->course_name?></option>
+					<?php
+						endforeach;
+					?>
+					</select>
+					</div>
+					</div>
+					<div class="form-group">
+					<label for="skypeId" class="col-sm-3 control-label">SkypeId</label>
+					<div class="col-sm-9">
+					  <input name="skypeId" type="text" class="form-control" id="skypeId" placeholder="skypeId">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label for="address" class="col-sm-3 control-label">Address</label>
+					<div class="col-sm-9">
+					  <input name="address" type="text" class="form-control" id="address" placeholder="address">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label for="Password" class="col-sm-3 control-label">Password</label>
+					<div class="col-sm-9">
+					  <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+					</div>
+				  </div>
+				   <div class="form-group">
+					<label for="inputPassword" class="col-sm-3 control-label">Confirm Password</label>
+					<div class="col-sm-9">
+					  <input name="inputpassword" type="password" class="form-control" id="inputPassword" placeholder="Password">
+					</div>
+				  </div>
+				  
+				  <div class="form-group">
+					<div class="col-sm-offset-3 col-sm-3">
+					  <button type="submit" class="btn btn-primary btnlogin">Register</button>
+					</div>
+					<div class="col-sm-5">
+					  <span id="error"></span>
+					</div>
+				  </div>
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+		  </div>
